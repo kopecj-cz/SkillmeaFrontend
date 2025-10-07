@@ -1,6 +1,6 @@
 
 p {
-    color:blue;
+    /*color:blue;*/
     background-color: red;
     font-size: 33px;
     font-family:'Times New Roman', Times, serif;
@@ -8,7 +8,7 @@ p {
 
   /*víceřádkový komentář*/
 
-@media(max-width: 768px){
+@media (max-width: 768px){
 .toto-je-paragraf{
     color: green;
     font-size: 2em;
@@ -30,4 +30,12 @@ p {
     margin: 10px;
     padding: 50px;
 }
+
+@media (max-width: 666px){
+.odstavec {
+    color:blueviolet;
+    font-size: 100px;
+}
+}
+
 

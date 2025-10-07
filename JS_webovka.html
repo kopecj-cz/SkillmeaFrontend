@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div>
+        <p id="text1">toto je původní text</p> 
+        <!-- <br> --> 
+        <button onclick="ZmenText()">ZMĚNIT TEXT</button>
+        <button onclick="ZmenBarvu()">ZMĚNIT BARVU </button>
+        <button id="tlacitko1" onclick="ToggleText()">SKRÝT</button>
+    </div>
+    
+    <script>
+
+        function ZmenText() {
+            let textKeZmene = "text byl změněn";
+            document.getElementById("text1").textContent = textKeZmene;
+        }
+
+        function ZmenBarvu() {
+            document.getElementById("text1").style.color = "blue"
+        }
+
+        function ToggleText() { 
+            const txt = document.getElementById("text1");
+            const btn = document.getElementById("tlacitko1");
+            
+            if(txt.style.display === "none"){
+                txt.style.display = "block";
+                btn.textContent = "SKRÝT";
+            } else {
+                txt.style.display = "none";
+                btn.textContent = "ZOBRAZIT";
+            }
+        }
+
+        
+    </script>
+
+
+
+</body>
+
+</html>
